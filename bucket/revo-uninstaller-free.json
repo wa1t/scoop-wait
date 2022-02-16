@@ -1,0 +1,24 @@
+{
+    "version": "2.3.8",
+    "description": "Revo Uninstaller helps you to uninstall software and remove unwanted programs easily",
+    "homepage": "https://www.revouninstaller.com/products/revo-uninstaller-free/",
+    "url": "https://www.revouninstaller.com/download-free-portable.php#/RevoUninstaller_Portable.zip",
+    "hash": "e9ed6b6f09a5133dac279f0b497a1487a4bff6208ebf65ec050df98de8a65bd1",
+    "extract_dir": "RevoUninstaller_Portable",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\settings.ini\")) {",
+        "    New-Item \"$dir\\settings.ini\" -ItemType File | Out-Null",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "RevoUPort.exe",
+            "Revo Uninstaller Free"
+        ]
+    ],
+    "persist": "settings.ini",
+    "checkver": "Version: ([\\d.]+)",
+    "autoupdate": {
+        "url": "https://www.revouninstaller.com/download-free-portable.php#/RevoUninstaller_Portable.zip"
+    }
+}

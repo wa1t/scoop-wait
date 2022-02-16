@@ -1,0 +1,27 @@
+{
+    "version": "11.2.0-9.0.0-r6",
+    "description": "It's a free C and C++ compiler for Microsoft Windows",
+    "homepage": "http://winlibs.com",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/11.2.0-9.0.0-msvcrt-r6/winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64-9.0.0-r6.7z",
+            "hash": "8b759e07e1006e6303822c68f4e7f11fa521f9cbda0250aba439179f5362694c"
+        }
+    },
+    "extract_dir": "mingw64",
+    "env_add_path": "bin",
+    "checkver": {
+        "regex": "gcc-(?<gcc>[\\d.]+)-mingw-w64-(?<mingw>[\\d.]+)-(?<release>r\\d+)",
+        "replace": "${gcc}-${mingw}-${release}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGcc-$matchMingw-msvcrt-$matchRelease/winlibs-x86_64-posix-seh-gcc-$matchGcc-mingw-w64-$matchMingw-$matchRelease.7z"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

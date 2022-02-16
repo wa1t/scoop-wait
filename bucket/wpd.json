@@ -1,0 +1,17 @@
+{
+    "version": "1.5.2042",
+    "description": "The real privacy dashboard for Windows",
+    "homepage": "https://wpd.app",
+    "url": "https://wpd.app/get/latest.zip",
+    "hash": "8c9105cc81ac94f291a8d18b4ac0a88b51488bf49aa9a076490b1c42aacabe09",
+    "shortcuts": [
+        [
+            "WPD.exe",
+            "WPD"
+        ]
+    ],
+    "checkver": "(\\d.\\d.\\d{4})",
+    "autoupdate": {
+        "url": "https://wpd.app/get/latest.zip"
+    }
+}

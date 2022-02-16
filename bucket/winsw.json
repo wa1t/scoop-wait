@@ -1,0 +1,32 @@
+{
+    "version": "3.0.0-alpha.10",
+    "description": "A wrapper executable that can run any executable as a Windows service, in a permissive license",
+    "homepage": "https://github.com/winsw/winsw",
+    "url": "https://github.com/winsw/winsw/releases/download/v3.0.0-alpha.10/WinSW-net461.exe#/WinSW.exe",
+    "hash": "3c0671e7b6914512062895b5c96f6b9cf16a83889e235a2948379e6e329296e7",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\logs\")) {",
+        "    New-Item \"$dir\\logs\" -ItemType Directory | Out-Null",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\services\")) {",
+        "    New-Item \"$dir\\services\" -ItemType Directory | Out-Null",
+        "}"
+    ],
+    "bin": [
+        [
+            "WinSW.exe",
+            "winsw"
+        ]
+    ],
+    "persist": [
+        "logs",
+        "services"
+    ],
+    "checkver": {
+        "url": "https://github.com/winsw/winsw/releases",
+        "regex": "v(?<version>[\\d\\.\\-\\w]+)\\/WinSW(?<net>[\\.\\-\\w]{4})"
+    },
+    "autoupdate": {
+        "url": "https://github.com/winsw/winsw/releases/download/v$version/WinSW$matchNet461.exe#/WinSW.exe"
+    }
+}
