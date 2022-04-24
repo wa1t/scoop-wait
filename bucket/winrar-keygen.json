@@ -1,11 +1,11 @@
 {
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "Principle of WinRAR key generation",
     "homepage": "https://github.com/bitcookies/winrar-keygen",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v2.1.1/winrar-keygen-x64.exe",
-            "hash": "3a0d3e4c3d44aed52f5cbdaa10725d257b9272c4699f1a0579075e370ef91449",
+            "url": "https://github.com/bitcookies/winrar-keygen/releases/download/v2.1.2/winrar-keygen-x64.exe",
+            "hash": "0e4b425854d885a926be699c28e002112409d571d06a88bb9e0b501af0f6ebf9",
             "bin": [
                 [
                     "winrar-keygen-x64.exe",
