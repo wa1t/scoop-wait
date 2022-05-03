@@ -1,11 +1,11 @@
 {
-    "version": "0.4.4",
+    "version": "0.4.5",
     "description": "A Beautiful third-party NetEase music player",
     "homepage": "https://github.com/qier222/YesPlayMusic",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/qier222/YesPlayMusic/releases/download/v0.4.4/YesPlayMusic-Setup-0.4.4.exe#/dl.7z",
-            "hash": "sha512:520b271e559f122c82dac667d9df002af26b8c5131a3c5795ee3d26dd30b1d6db6d4260df837994b759c48cbfa7b7efb1396fb30ef955e847e7a688dcd21b3a9",
+            "url": "https://github.com/qier222/YesPlayMusic/releases/download/v0.4.5/YesPlayMusic-Setup-0.4.5.exe#/dl.7z",
+            "hash": "sha512:2581030fcfdb867c3b2a316adb40e0855468be8725690948de08cbd3dc1b5852baa220817d689960250f2034cf1d94951a205caa7f76eccfa609f8a2e49aff5e",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
