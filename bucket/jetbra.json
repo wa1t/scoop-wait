@@ -1,0 +1,15 @@
+{
+    "version": "220701",
+    "homepage": "https://ipfs.io/ipfs/bafybeiez4ex55643532eq536nskx6poa6nvzjorb3ysncivenexohwmloy/",
+    "url": "https://ipfs.io/ipfs/bafybeiez4ex55643532eq536nskx6poa6nvzjorb3ysncivenexohwmloy/files/jetbra-bfcd6f85fcbc8859f7d096be09db50f2548f2eb8.zip",
+    "hash": "sha1:bfcd6f85fcbc8859f7d096be09db50f2548f2eb8",
+    "extract_dir": "jetbra",
+    "checkver": "jetbra-(?<hash>\\w+).*(?<version>\\d{6})",
+    "autoupdate": {
+        "url": "https://ipfs.io/ipfs/bafybeiez4ex55643532eq536nskx6poa6nvzjorb3ysncivenexohwmloy/files/jetbra-$matchHash.zip",
+        "hash": {
+            "url": "https://ipfs.io/ipfs/bafybeiez4ex55643532eq536nskx6poa6nvzjorb3ysncivenexohwmloy/",
+            "regex": "$sha1"
+        }
+    }
+}
